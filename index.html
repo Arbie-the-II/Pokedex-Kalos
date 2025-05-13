@@ -18,7 +18,7 @@
                 <path d="M 1 75 A 75 75 0 0 1 145 75" stroke="white" stroke-width="10" fill="none" transform="translate(10, 10)" />
               </svg>
             </div>
-            <div class="pokedex-start-effect-two expand2">
+            <div class="pokedex-start-effect-two expand">
               <svg width="170" height="100">
                 <path d="M 1 75 A 75 75 0 0 1 145 75" stroke="white" stroke-width="10" fill="none" transform="translate(10, 10)" />
               </svg>
@@ -34,12 +34,15 @@
             <div class="pokemon-info">
               <!-- Pokémon details will be dynamically added here -->
             </div>
+           
             <div class="close-btn">
               <!-- Close Button -->
               <button id="pokedex-close" class="custom-btn" onclick="togglePokedex()" style="display: none;">Close Pokedex</button>
             </div>
-
             <div class="input-wrapper" style="padding-top: 0;">
+              <div class="pokeball-bg">
+                <img src="pokeballSpin.png" alt="pokeball-bg" style="height: 500px; width: 500px; transform: translate(0, 78%);">
+              </div>
               <input type="text" id="poke-input" placeholder="Enter Pokémon name or ID" />
               <button id="get-pokemon">Get Pokémon</button>
               <div class="error"></div>
@@ -52,7 +55,6 @@
         </div>
     </div>
     <footer>
-        <!-- Footer content -->
     </footer>
     <script src="js/script.js"></script>
     <script src="js/pokemon.js"></script>
